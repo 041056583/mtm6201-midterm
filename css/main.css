@@ -1,0 +1,53 @@
+body, html{
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+  /* NAVIGATION */
+  .small-logo{
+    padding:10px;
+    margin-bottom: -60px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+  }
+
+  li a:hover{
+    background-color: gray;
+  }
+
+  li a:active{
+    background-color: gray;
+    text-decoration: underline;
+  }
+
+  /* BANNER */
+  .home-banner {
+    background-image:
+    url(/images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+  }

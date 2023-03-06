@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER-STARTS -->
+      <header>
+        <!-- NAVIGATION-STARTS -->
+        <div class="nav-logo">
+          <img src="images/small-logo.png" alt="small-logo" />
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- MAIN-STARTS -->
+      <main>
+        <!-- BANNER-STARTS -->
+        <div class="home-banner">
+          <h1>Home</h1>
+        </div>
+        <!-- HOME-BIG-LOGO -->
+        <div class="home-logo">
+          <img src="images/Big-logo.png" alt="main-logo" />
+        </div>
+        <!-- LOGIN-CRADENTIALS -->
+        <div class="home-inputs">
+          <div class="home-h2">
+            <h2>Login or Signup</h2>
+          </div>
+          <form action="/action_page.php" class="login-home">
+            <label for="email">UserName:</label>
+            <input type="email" id="email" name="email" /><br /><br />
+            <label for="pwd">Password:</label>
+            <input
+              type="password"
+              id="pwd"
+              name="pwd"
+              minlength="8"
+            /><br /><br />
+            <input type="submit" id="button" />
+          </form>
+        </div>
+      </main>
+      <!-- FOOTER-STARTS -->
+      <footer>
+        <div class="home-footer-banner">
+          <h3>Sonic Sound Production</h3>
+        </div>
+        &copy; <em id="date"></em>Sonic Sound Production
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,51 +1,131 @@
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .container {
@@ -53,82 +133,82 @@ table {
   margin: 14px auto;
 }
 
-body{
-    background-color:black;
-    height: 100%;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+body {
+  background-color: black;
+  height: 100%;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
-  /* NAVIGATION */
-  .nav-logo{
-    padding:10px;
-    margin-bottom: -60px;
-  }
-
-  .nav{
-    border-width:1px 0;
-    list-style:none;
-    margin: 5px;
-    padding: 5px;
-    text-align:center;
-    font-size: 28px;
-}
-.nav li{
-    display:inline;
-}
-.nav a{
-    display:inline-block;
-    padding:10px;
-    color: white;
-    text-decoration: none;
+/* NAVIGATION */
+.nav-logo {
+  padding: 10px;
+  margin-bottom: -60px;
 }
 
-li a:hover{
+.nav {
+  border-width: 1px 0;
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 28px;
+}
+.nav li {
+  display: inline;
+}
+.nav a {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
   background-color: gray;
 }
 
-li a:active{
+li a:active {
   background-color: gray;
 }
-  
-  .home-banner img{
-    width: 100%;
-    height: 400px;
-  }
+
+.home-banner img {
+  width: 100%;
+  height: 400px;
+}
 
 /* HOME-LOGO */
-.home-logo{
+.home-logo {
   text-align: center;
   margin-top: 80px;
 }
 
-.home-h2{
+.home-h2 {
   text-align: center;
   margin-bottom: -55px;
 }
 
-.login-home{
+.login-home {
   text-align: center;
   padding: 30px;
   margin-top: 50px;
 }
 
-  #email{
+#email {
   width: 200px;
   border-radius: 10px;
   box-shadow: 1px 8px 15px 0px #0ff;
   margin-right: 70px;
 }
 
-#pwd{
+#pwd {
   width: 200px;
   border-radius: 10px;
   box-shadow: 1px 8px 15px 0px #0ff;
   margin-right: 70px;
 }
 
-#button{
+#button {
   height: 30px;
   width: 90px;
   color: white;
@@ -139,7 +219,7 @@ li a:active{
 }
 
 /* BOTTOM-BANNER */
-  .home-footer-banner img{
-    width: 100%;
-    height: 400px;
-  }
+.home-footer-banner img {
+  width: 100%;
+  height: 400px;
+}

@@ -172,7 +172,7 @@ li a:active {
   background-color: gray;
 }
 
-.home-banner img {
+.home-banner {
   width: 100%;
   height: 400px;
 }
@@ -222,4 +222,137 @@ li a:active {
 .home-footer-banner img {
   width: 100%;
   height: 400px;
+}
+
+
+/* ========== ABOUT-STARTS ========== */
+
+
+.about-banner{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  text-align: center;
+}
+
+    /* <!-- MEET-THE-TEAM --> */
+    .the-team, .column{
+      display: grid;
+      padding: 20px;
+  }
+  .person1{
+      margin-bottom: 40px;
+      grid-row-start: 1;
+      padding: 20px;
+  }
+
+  .person2{
+      margin-bottom: 40px;
+      grid-row-start: 2;
+      padding: 20px;
+  }
+
+  .person3{
+      margin-bottom: 40px;
+      grid-row-start: 3;
+      padding: 20px;
+  }
+
+  .person4{
+      margin-bottom: 40px;
+      grid-column-start: 3;
+      grid-row-start: 1;
+      margin-left: 40px;
+      padding: 20px;
+  }
+
+  .mission{
+    margin-bottom: 40px;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+
+/* ========== CONTACT-STARTS ========== */
+
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 200px;
+  font-size: 30px;
+}
+
+.contact-images {
+  flex: 1;
+}
+
+.contact-images img {
+  display: block;
+  margin-bottom: 10px;
+  height: 150px;
+  width: 150px;
+}
+
+.list1 {
+  flex: 1;
+  margin-left: 200px;
+  margin-top: -465px;
+}
+
+.list2 {
+  flex: 2;
+  margin-left: 200px;
+}
+
+.list3 {
+  flex: 3;
+  margin-left: 200px;
+}
+
+.list li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 200px;
+  font-size: 30px;
+}
+
+.contact-images {
+  flex: 1;
+}
+
+.contact-images img {
+  display: block;
+  margin-bottom: 10px;
+  height: 150px;
+  width: 150px;
+}
+
+.contact-list1 {
+  flex: 1;
+  margin-left: 200px;
+  margin-top: -465px;
+}
+
+.contact-list2 {
+  flex: 2;
+  margin-left: 200px;
+}
+
+.contact-list3 {
+  flex: 3;
+  margin-left: 200px;
+}
+
+.contact-list li {
+  list-style: none;
+  margin-bottom: 10px;
 }

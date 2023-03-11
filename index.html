@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
@@ -16,11 +18,15 @@
       <!-- HEADER-STARTS -->
       <header>
         <!-- NAVIGATION-STARTS -->
-        <div class="container">
+        <div class="container" id="top">
+          <ul class="skip-links">
+            <li><a href="#main">Skip to main content</a></li>
+            <li><a href="#bottom">Skip to bottom</a></li>
+          </ul>
           <div class="nav-logo">
             <img src="images/small-logo.png" alt="small-logo" />
           </div>
-          <nav class="nav">
+          <nav class="nav" role="navigation">
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
@@ -32,10 +38,10 @@
       </header>
       <!-- HEADER-ENDS -->
       <!-- MAIN-STARTS -->
-      <main>
+      <main role="main" id="main">
         <!-- BANNER-STARTS -->
         <div class="container">
-          <div class="home-banner">
+          <div class="home-top-banner">
             <img src="images/banner.png" alt="home-banner" />
           </div>
           <!-- BANNER-ENDSS -->
@@ -66,10 +72,14 @@
       <!-- MAIN-ENDS -->
       <!-- FOOTER-STARTS -->
       <footer>
-        <div class="home-footer-banner">
-          <img src="images/banner.png" alt="footer-banner" />
+        <div role="bottom" id="bottom">
+          <div class="home-footer-banner">
+            <img src="images/banner.png" alt="footer-banner" />
+          </div>
+          &copy; <em id="date"></em>Sonic Sound Production<a href="#top"
+            >Back to Top</a
+          >
         </div>
-        &copy; <em id="date"></em>Sonic Sound Production
       </footer>
       <!-- FOOTER-ENDS -->
     </div>

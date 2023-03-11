@@ -129,8 +129,29 @@ table {
 }
 
 .container {
-  width: 100%;
-  margin: 14px auto;
+  max-width: 1280px;
+  margin: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3{
+  font-weight: bold;
+}
+
+.skip-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skip-links a{
+  position: absolute;
+  top: -3em;
+  background-color: black;
+  color:rgb(0, 102, 255);
+  padding: .5em 1em;
+}
+.skip-links a:focus{
+  top: 0;
 }
 
 body {
@@ -139,6 +160,8 @@ body {
   color: white;
   font-family: "Roboto", sans-serif;
 }
+
+
 
 /* NAVIGATION */
 .nav-logo {
@@ -172,7 +195,7 @@ li a:active {
   background-color: gray;
 }
 
-.home-banner {
+.home-top-banner img{
   width: 100%;
   height: 400px;
 }
@@ -240,10 +263,16 @@ li a:active {
       display: grid;
       padding: 20px;
   }
+  .the-team img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
   .person1{
       margin-bottom: 40px;
       grid-row-start: 1;
       padding: 20px;
+      
   }
 
   .person2{
@@ -278,81 +307,174 @@ li a:active {
 /* ========== CONTACT-STARTS ========== */
 
 
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  margin-left: 200px;
-  font-size: 30px;
+.contact .contact-methods{
+  display: grid;
+  margin: 20px;
+  padding: 20px;
 }
 
-.contact-images {
-  flex: 1;
+.contact-methods img{
+  width: 100%;
+  height: auto;
+}
+.contact-methods .jean{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  margin: 20px;
 }
 
-.contact-images img {
-  display: block;
-  margin-bottom: 10px;
-  height: 150px;
-  width: 150px;
+.contact-methods .veronica{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  margin: 20px;
 }
 
-.list1 {
-  flex: 1;
-  margin-left: 200px;
-  margin-top: -465px;
+.contact-methods .walter{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  margin: 20px;
 }
 
-.list2 {
-  flex: 2;
-  margin-left: 200px;
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-.list3 {
-  flex: 3;
-  margin-left: 200px;
+input[type=submit] {
+  background-color: #00a2ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.list li {
-  list-style: none;
-  margin-bottom: 10px;
-}
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  margin-left: 200px;
-  font-size: 30px;
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 
-.contact-images {
-  flex: 1;
+
+
+    .contact-footer-banner img {
+      width: 100%;
+      height: 400px;
+    }
+
+
+
+
+@media only screen and (min-width: 480px){
+  .container{
+		max-width: 720px;
+    margin: 14px;
+  }
 }
 
-.contact-images img {
-  display: block;
-  margin-bottom: 10px;
-  height: 150px;
-  width: 150px;
+
+
+
+@media screen and (min-width: 720px){
+  .container{
+		max-width: 1080px;
+    margin: 14px;
+  }
 }
 
-.contact-list1 {
-  flex: 1;
-  margin-left: 200px;
-  margin-top: -465px;
+
+@media screen and (min-width: 1080px){
+  .container{
+		max-width: 1280px;
+    margin: 14px;
+  }
+  /* HOME-LOGO-SPIN */
+  .home-logo {
+    animation: rotation 1s;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  /* MEET-THE-TEAM */
+  .person1{
+    margin-bottom: 40px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding: 20px;
 }
 
-.contact-list2 {
-  flex: 2;
-  margin-left: 200px;
+.person2{
+    margin-bottom: 40px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    padding: 20px;
 }
 
-.contact-list3 {
-  flex: 3;
-  margin-left: 200px;
+.person3{
+    margin-bottom: 40px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    padding: 20px;
 }
 
-.contact-list li {
-  list-style: none;
-  margin-bottom: 10px;
+.person4{
+    margin-bottom: 40px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-left: 40px;
+    padding: 20px;
 }
+
+.mission{
+  margin-bottom: 40px;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 3;
+  margin-left: 40px;
+  padding: 20px;
+}
+
+
+
+
+.contact-methods .jean{
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+}
+
+.contact-methods .veronica{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+}
+
+.contact-methods .walter{
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+}
+
+
+
+    .contact-footer-banner img {
+      width: 100%;
+      height: 400px;
+    }
+}
+

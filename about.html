@@ -5,119 +5,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
   </head>
   <body>
-    <!-- HEADER-STARTS -->
-    <header>
-      <!-- NAVIGATION-START -->
-      <div class="container">
-        <div class="nav-logo">
-          <img src="images/small-logo.png" alt="small-logo" />
-        </div>
-        <nav class="nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <div class="container">
+      <!-- HEADER-STARTS -->
+      <header>
+        <!-- NAVIGATION-START -->
+        <div class="container" id="top">
+          <ul class="skip-links">
+            <li><a href="#main">Skip to main content</a></li>
+            <li><a href="#bottom">Skip to bottom</a></li>
           </ul>
-        </nav>
-      </div>
-      <!-- NAVIGATION-ENDS -->
-    </header>
-    <!-- HEADER-ENDS -->
-    <!-- MAIN-START -->
-    <main>
-      <!-- BANNER-STARTS -->
-      <div class="container">
-        <div class="about-banner">
-          <img
-            class="about-banner"
-            src="images/about-banner.png"
-            alt="about-banner"
-          />
+          <div class="nav-logo">
+            <img src="images/small-logo.png" alt="small-logo" />
+          </div>
+          <nav class="nav" role="navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-        <!-- BANNER-ENDS -->
-        <!-- MEET-THE-TEAM-STARTS -->
-        <div class="the-team">
-          <div class="column">
-            <!-- TEAM-MEMBER-1-STARTS -->
-            <div class="person1">
-              <h3>Jean Van Bam</h3>
-              <img src="images/person1.png" alt="Jean-Bam" />
-              <p>
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using ‘Content
-                here, content here.
-              </p>
+        <!-- NAVIGATION-ENDS -->
+      </header>
+      <!-- HEADER-ENDS -->
+      <!-- MAIN-START -->
+      <main role="main" id="main">
+        <!-- BANNER-STARTS -->
+        <div class="container">
+          <div class="about-banner">
+            <img
+              class="about-banner"
+              src="images/about-banner.png"
+              alt="about-banner"
+            />
+          </div>
+          <!-- BANNER-ENDS -->
+          <!-- MEET-THE-TEAM-STARTS -->
+          <div class="the-team">
+            <div class="column">
+              <!-- TEAM-MEMBER-1-STARTS -->
+              <div class="person1">
+                <h3>Jean Van Bam</h3>
+                <img src="images/person1.png" alt="Jean-Bam" />
+                <p>
+                  <ul itemscope itemtype="https://schema.org/Person">
+                  <li itemprop="name">Jean Van Bam</li>
+                  <li itemprop="jobTitle">Instructor</li>
+                  <li itemprop="email">Email: Jean-Van-Bam@ssp.ca</li>
+                  <li itemprop="telephone">Phone: 613-000-0000</li>
+                </ul> <br>
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using ‘Content
+                  here, content here.
+                </p>
+              </div>
+              <!-- TEAM-MEMBER-1-ENDS -->
+              <!-- TEAM-MEMBER-2-STARTS -->
+              <div class="person2">
+                <h3>Veronica Loronika</h3>
+                <img src="images/person2.png" alt="Veronica Loronika" />
+                <p>
+                  <ul itemscope itemtype="https://schema.org/Person">
+                    <li itemprop="name">Veronica Loronika</li>
+                    <li itemprop="jobTitle">Instructor</li>
+                    <li itemprop="email">Email: Veronica-Loronika@ssp.ca</li>
+                    <li itemprop="telephone">Phone: 613-000-0000</li>
+                  </ul> <br>
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using ‘Content
+                  here, content here.
+                </p>
+              </div>
+              <!-- TEAM-MEMBER-2-ENDS -->
+              <!-- TEAM-MEMBER-3-STARTS -->
+              <div class="person3">
+                <h3>Walter Balter</h3>
+                <img src="images/person3.png" alt="Jean-Bam" />
+                <p>
+                  <ul itemscope itemtype="https://schema.org/Person">
+                    <li itemprop="name">Walter Balter</li>
+                    <li itemprop="jobTitle">Instructor</li>
+                    <li itemprop="email">Email: Walter-Balter@ssp.ca</li>
+                    <li itemprop="telephone">Phone: 613-000-0000</li>
+                  </ul> <br>
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using ‘Content
+                  here, content here.
+                </p>
+              </div>
+              <!-- TEAM-MEMBER-3-ENDS -->
+              <!-- TEAM-MEMBER-4-STARTS -->
+              <div class="person4">
+                <h3>Jon Beveridge</h3>
+                <img src="images/person4.png" alt="Jon Beveridge" />
+                <p>
+                  <ul itemscope itemtype="https://schema.org/Person">
+                    <li itemprop="name">Jon Beveridge</li>
+                    <li itemprop="jobTitle">Founder</li>
+                    <li itemprop="email">Email: Jon-Beveridge@ssp.ca</li>
+                    <li itemprop="telephone">Phone: 613-000-0000</li>
+                  </ul> <br>
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using ‘Content
+                  here, content here.
+                </p>
+              </div>
+              <!-- TEAM-MEMBER-4-ENDS -->
+              <!-- MISSION-OUTLINE-STARTS -->
+              <div class="mission">
+                <h3>Our Mission</h3>
+                <p>
+                  simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry’s standard dummy text ever
+                  since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book. It has survived
+                  not only five centuries, but also the leap into electronic
+                  typesetting, remaining essentially unchanged. It was
+                  popularised in the 1960s with the release of Letraset sheets
+                  containing Lorem Ipsum passages, and more recently with
+                  desktop publishing software like Aldus PageMaker including
+                  versions of Lorem Ipsum.
+                </p>
+              </div>
+              <!-- MISSION-OUTLINE-ENDS -->
             </div>
-            <!-- TEAM-MEMBER-1-ENDS -->
-            <!-- TEAM-MEMBER-2-STARTS -->
-            <div class="person2">
-              <h3>Jean Van Bam</h3>
-              <img src="images/person2.png" alt="Veronica Loronika" />
-              <p>
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using ‘Content
-                here, content here.
-              </p>
-            </div>
-            <!-- TEAM-MEMBER-2-ENDS -->
-            <!-- TEAM-MEMBER-3-STARTS -->
-            <div class="person3">
-              <h3>Walter Balter</h3>
-              <img src="images/person3.png" alt="Jean-Bam" />
-              <p>
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using ‘Content
-                here, content here.
-              </p>
-            </div>
-            <!-- TEAM-MEMBER-3-ENDS -->
-            <!-- TEAM-MEMBER-4-STARTS -->
-            <div class="person4">
-              <h3>Jon Beveridge</h3>
-              <img src="images/person4.png" alt="Jon Beveridge" />
-              <p>
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using ‘Content
-                here, content here.
-              </p>
-            </div>
-            <!-- TEAM-MEMBER-4-ENDS -->
-            <!-- MISSION-OUTLINE-STARTS -->
-            <div class="mission">
-              <h3>Our Mission</h3>
-              <p>
-                simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry’s standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book. It has survived
-                not only five centuries, but also the leap into electronic
-                typesetting, remaining essentially unchanged. It was popularised
-                in the 1960s with the release of Letraset sheets containing
-                Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-            </div>
-            <!-- MISSION-OUTLINE-ENDS -->
           </div>
         </div>
-      </div>
-      <!-- MEET-THE-TEAM-ENDS -->
-    </main>
-    <!-- MAIN-ENDS -->
-    <!-- FOOTER-START -->
-    <footer>
-      <footer>&copy; <em id="date"></em>Sonic Sound Production</footer>
-    </footer>
+        <!-- MEET-THE-TEAM-ENDS -->
+      </main>
+      <!-- MAIN-ENDS -->
+      <!-- FOOTER-START -->
+      <footer>
+        <div role="bottom" id="bottom">
+          &copy; <em id="date"></em>Sonic Sound Production<a href="#top"
+            >Back to Top</a
+          >
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

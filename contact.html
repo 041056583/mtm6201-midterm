@@ -5,58 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
   </head>
   <body>
-    <!-- HEADER-STARTS -->
-    <header>
-      <!-- NAVIGATION-START -->
-      <div class="container">
-        <div class="nav-logo">
-          <img src="images/small-logo.png" alt="small-logo" />
-        </div>
-        <nav class="nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <div class="container">
+      <!-- HEADER-STARTS -->
+      <header>
+        <!-- NAVIGATION-START -->
+        <div class="container" id="top">
+          <ul class="skip-links">
+            <li><a href="#main">Skip to main content</a></li>
+            <li><a href="#bottom">Skip to bottom</a></li>
           </ul>
-        </nav>
-      </div>
-      <!-- NAVIGATION-ENDS -->
-    </header>
-    <!-- HEADER-ENDS -->
-    <!-- MAIN-START -->
-    <main>
-      <!-- POINT-OF-CONTACTS -->
-      <div class="contact-container">
-        <div class="contact-images">
-          <img src="images/contact1.png" alt="head-office" />
-          <img src="images/contact2.png" alt="schedule" />
-          <img src="images/contact3.png" alt="quote" />
+          <div class="nav-logo">
+            <img src="images/small-logo.png" alt="small-logo" />
+          </div>
+          <nav class="nav" role="navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-        <ul class="contact-list1">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
-        <ul class="contact-list2">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
-        <ul class="contact-list3">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
-      </div>
-    </main>
-    <!-- FOOTER-START -->
-    <footer>&copy; <em id="date"></em>Sonic Sound Production</footer>
+        <!-- NAVIGATION-ENDS -->
+      </header>
+      <!-- HEADER-ENDS -->
+      <!-- MAIN-START -->
+      <main role="main" role="main" id="main">
+        <!-- POINT-OF-CONTACTS -->
+
+        <div class="contact">
+          <div class="contact-methods">
+            <!-- CONTACT-METHOD-1-STARTS -->
+            <div class="jean">
+              <img src="images/person1.png" alt="jean" />
+              <p>
+                <ul itemscope itemtype="https://schema.org/Person">
+                  <li itemprop="name">Jean Van Bam</li>
+                  <li itemprop="Instrument">Guitar</li>
+                </ul> <br>
+                </p>
+            </div>
+            <!-- CONTACT-METHOD-1-ENDS -->
+
+            <!-- CONTACT-METHOD-2-STARTS -->
+            <div class="veronica">
+              <img src="images/person2.png" alt="veronica" />
+              <p>
+                <ul itemscope itemtype="https://schema.org/Person">
+                  <li itemprop="name">Veronica Loronika</li>
+                  <li itemprop="Instrument">Drums</li>
+                </ul> <br>
+                </p>
+            </div>
+            <!-- CONTACT-METHOD-2-ENDS -->
+
+            <!-- CONTACT-METHOD-3-STARTS -->
+            <div class="walter">
+              <img src="images/person3.png" alt="walter" />
+              <p>
+                <ul itemscope itemtype="https://schema.org/Person">
+                  <li itemprop="name">Walter Balter</li>
+                  <li itemprop="Instrument">Piano</li>
+                </ul> <br>
+                </p>
+            </div>
+            <!-- CONTACT-METHOD-3-ENDS -->
+            <!-- CONTACT-FORM-STARTS -->
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+
+              <label for="country">Contacting</label>
+              <select id="selector" name="selector">
+                <option value="jean-van-bam">Jean Van Bam
+                </option>
+                <option value="veronica-loronika">Veronica Loronika</option>
+                <option value="walter-balter">Walter Balter</option>
+              </select>
+
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
+                        <!-- CONTACT-FORM-ENDS -->
+          </div>
+        </div>
+      </main>
+      <!-- FOOTER-START -->
+      <footer>
+        <div role="bottom" id="bottom">
+          <div class="contact-footer-banner">
+            <img src="images/contact4.png" alt="contact-footer-banner" />
+          </div>
+          &copy; <em id="date"></em>Sonic Sound Production
+          <a href="#top">Back to Top</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

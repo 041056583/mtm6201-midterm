@@ -232,6 +232,7 @@ li a:active {
 }
 
 #button {
+  text-align: center;
   height: 30px;
   width: 90px;
   color: white;
@@ -477,4 +478,3 @@ input[type=submit]:hover {
       height: 400px;
     }
 }
-

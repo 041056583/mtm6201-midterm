@@ -222,6 +222,7 @@ li a:active {
   text-align: center;
   padding: 30px;
   margin-top: 50px;
+  font-size: 10px;
 }
 
 #email {
@@ -230,11 +231,6 @@ li a:active {
   box-shadow: 1px 8px 15px 0px #0ff;
   margin-right: 70px;
 }
-
-label{
-  font-size: 10px;
-}
-
 #pwd {
   width: 200px;
   border-radius: 10px;

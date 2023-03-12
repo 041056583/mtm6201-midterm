@@ -170,7 +170,7 @@ body {
 }
 
 .nav-logo:hover{
-  transform:rotateX(9turn);
+  transform:rotateX(5turn);
   transition:transform 5s;
 }
 

@@ -169,6 +169,11 @@ body {
   margin-bottom: -60px;
 }
 
+.nav-logo:hover{
+  transform:rotateX(9turn);
+  transition:transform 5s;
+}
+
 .nav {
   border-width: 1px 0;
   list-style: none;
@@ -239,7 +244,7 @@ li a:active {
   margin-right: 115px;
   border-radius: 30px;
   border: none;
-  background-color: rgb(42, 140, 130);
+  background-color: #2a8c82;
 }
 
 /* BOTTOM-BANNER */
@@ -352,7 +357,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #00a2ff;
+  background-color: #2a8c82;
   color: white;
   padding: 12px 20px;
   border: none;

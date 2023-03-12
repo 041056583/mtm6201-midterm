@@ -130,6 +130,7 @@ table {
 
 .container {
   font-family: 'Roboto', sans-serif;
+  font-size: 10px;
   margin: 14px;
 }
 
@@ -240,7 +241,6 @@ li a:active {
 
 #button {
   text-align: center;
-  height: 30px;
   width: 90px;
   color: white;
   margin-right: 115px;

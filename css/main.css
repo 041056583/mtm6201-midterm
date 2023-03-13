@@ -227,13 +227,13 @@ li a:active {
 }
 
 #email {
-  width: 200px;
+  width: 150px;
   border-radius: 10px;
   box-shadow: 1px 8px 15px 0px #0ff;
   margin-right: 70px;
 }
 #pwd {
-  width: 200px;
+  width: 150px;
   border-radius: 10px;
   box-shadow: 1px 8px 15px 0px #0ff;
   margin-right: 70px;

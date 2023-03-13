@@ -262,13 +262,12 @@ li a:active {
 .about-banner{
   width: 100%;
   height: 400px;
-  position: relative;
+
 }
 
     /* <!-- MEET-THE-TEAM --> */
     .the-team, .column{
       display: grid;
-      padding: 20px;
   }
   .the-team img{
     width: 140px;
@@ -441,7 +440,6 @@ input[type=submit]:hover {
   .about-banner{
     width: 100%;
     height: 400px;
-    position: relative;
   }
 
   .contact-footer-banner img {
